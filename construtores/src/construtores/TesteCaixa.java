@@ -25,7 +25,7 @@ public class TesteCaixa {
 		p = c1.entradaDados2();
 		
 		Caixa c4 = new Caixa(l, a, p);
-		System.out.println(c3.volumeCaixa());
+		System.out.println(c4.volumeCaixa());
 		
 		
 		
