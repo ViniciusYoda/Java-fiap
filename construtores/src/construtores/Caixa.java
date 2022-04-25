@@ -13,5 +13,12 @@ public class Caixa {
 		this.altura = 10;
 		this.profundidade = 10;
 	}
+	
+	//métodos
+	
+	public double volumeCaixa() {
+		System.out.println("Calculando o volume da Caixa");
+		return largura * altura * profundidade;
+	}
 
 }
