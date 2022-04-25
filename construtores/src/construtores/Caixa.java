@@ -45,6 +45,15 @@ public class Caixa {
 		setProfundidade(p);
 		
 	}
+	
+	public double entradaDados2() {
+		System.out.println("Entrada de Dados 2");
+		Scanner input = new Scanner(System.in);
+		System.out.println("Número: ");
+		double n = input.nextDouble();
+		return n;
+			
+	}
 
 	public double getLargura() {
 		return largura;
