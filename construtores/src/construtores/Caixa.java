@@ -1,5 +1,7 @@
 package construtores;
 
+import java.util.Scanner;
+
 public class Caixa {
 	//atributos
 	private double largura;
@@ -26,6 +28,12 @@ public class Caixa {
 	public double volumeCaixa() {
 		System.out.println("Calculando o volume da Caixa");
 		return largura * altura * profundidade;
+	}
+	
+	public double entradaDados() {
+		System.out.println("Entrada de Dados");
+		Scanner input = new Scanner(System.in);
+		
 	}
 
 	public double getLargura() {
