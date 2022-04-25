@@ -30,9 +30,15 @@ public class Caixa {
 		return largura * altura * profundidade;
 	}
 	
-	public double entradaDados() {
+	public void entradaDados() {
 		System.out.println("Entrada de Dados");
 		Scanner input = new Scanner(System.in);
+		System.out.println("Largura: ");
+		double l = input.nextDouble();
+		System.out.println("Altura: ");
+		double a = input.nextDouble();
+		System.out.println("Profundidade: ");
+		double p = input.nextDouble();
 		
 	}
 
