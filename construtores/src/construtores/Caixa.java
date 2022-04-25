@@ -14,6 +14,13 @@ public class Caixa {
 		this.profundidade = 10;
 	}
 	
+	//construtor parametrizado
+	public Caixa(double l, double a, double p){
+		largura = l;
+		altura = a;
+		profundidade = p;
+	}
+	
 	//métodos
 	
 	public double volumeCaixa() {
