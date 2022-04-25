@@ -39,6 +39,10 @@ public class Caixa {
 		double a = input.nextDouble();
 		System.out.println("Profundidade: ");
 		double p = input.nextDouble();
+		//configurando os dados do objeto
+		setLargura(l);
+		setAltura(a);
+		setProfundidade(p);
 		
 	}
 
