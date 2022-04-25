@@ -7,6 +7,7 @@ public class TesteCaixa {
 		System.out.println("Altura: " + c1.getAltura());
 		System.out.println("Largura: " + c1.getLargura());
 		System.out.println("Profundidade: " + c1.getProfundidade());
+		System.out.println("Volume: " + c1.volumeCaixa());
 	}
 
 }
