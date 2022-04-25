@@ -14,6 +14,19 @@ public class TesteCaixa {
 		c3.entradaDados();
 		System.out.println(c3.volumeCaixa());
 		
+		System.out.println("================================");
+		
+		double l, a, p;
+		System.out.println("Largura: ");
+		l = c1.entradaDados2();
+		System.out.println("Altura: ");
+		a = c1.entradaDados2();
+		System.out.println("Profundidade: ");
+		p = c1.entradaDados2();
+		
+		Caixa c4 = new Caixa(l, a, p);
+		System.out.println(c3.volumeCaixa());
+		
 		
 		
 	}
