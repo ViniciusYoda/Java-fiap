@@ -6,21 +6,30 @@ public class ExemploPraticoCondicionais {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int op;
+		int op = 0;
+		boolean continuar = true;
+		String nome = "Vinícius";
 		
-		System.out.println("1-Domingo");
-		System.out.println("2-Segunda");
-		System.out.println("3-Terça");
-		System.out.println("4-Quarta");
-		System.out.println("5-Quinta");
-		System.out.println("6-Sexta");
-		System.out.println("7-Sábado");
-		System.out.println("Opção: ");
-		op = input.nextInt();
+		
+		while(continuar) {
+			System.out.println("1-Domingo");
+			System.out.println("2-Segunda");
+			System.out.println("3-Terça");
+			System.out.println("4-Quarta");
+			System.out.println("5-Quinta");
+			System.out.println("6-Sexta");
+			System.out.println("7-Sábado");
+			System.out.println("Opção: ");
+			op = input.nextInt();
+			if(op <= 7 && op >= 1) {
+				continuar = false;
+			}
+		}
+		
 		
 		switch(op) {
 		case 1:
-			System.out.println("Domingo");
+			System.out.println("Domingo - R$ 100.00");
 			break;
 		case 2: 
 			System.out.println("Segunda");
@@ -37,10 +46,31 @@ public class ExemploPraticoCondicionais {
 		case 6:
 			System.out.println("Sexta");
 			break;
-		default:
+		case 7:
 			System.out.println("Sábado");
+			break;
+		default: 
+			System.out.println("Dia da semana inválido");
 			
 		
+		}
+		switch(nome) {
+		case "Vinicius":
+		case "vinicius":
+		case "VINICIUS":
+			System.out.println("Correto");
+			break;
+		default:
+			System.out.println("Incorret!");
+		}
+		
+		//exemplo com if
+		if(nome.equals("Vinicius")||
+				nome.equals("vinicius")||
+				nome.equals("VINICIUS")) {
+			System.out.println("Correto");
+		}else {
+			System.out.println("Incorreto");
 		}
 	}
 
