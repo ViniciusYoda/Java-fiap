@@ -4,8 +4,9 @@ public class Cachorro extends Animal{
 
 	private int nPatas = 4;
 	
-	public Cachorro(String e, String c, String h) {
+	public Cachorro(String e, String c, String h, int nPatas) {
 		super(e, c, h);
+		this.setnPatas(nPatas);
 	}
 	
 	

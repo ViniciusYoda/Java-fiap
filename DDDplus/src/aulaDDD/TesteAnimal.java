@@ -2,7 +2,7 @@ package aulaDDD;
 
 public class TesteAnimal {
 	public static void main(String[] args) {
-		Cachorro dog = new Cachorro("Shitzu", "Marrom", "Doméstico");
+		Cachorro dog = new Cachorro("Shitzu", "Marrom", "Doméstico", 4);
 		Gato cat = new Gato("Felino", "Preto", "Doméstico");
 		
 		System.out.println(dog);
@@ -17,7 +17,7 @@ public class TesteAnimal {
 		System.out.println("Espécie: " + cat.getEspecie());
 		System.out.println("Cor: " + cat.getCor());
 		System.out.println("Habitate: " + cat.getHabitat());
-		System.out.println("Patas: " + cat.getnPatas());
+		
 		cat.fazerBarulho();
 	}
 }
