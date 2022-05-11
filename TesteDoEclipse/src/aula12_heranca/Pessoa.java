@@ -6,11 +6,17 @@ public class Pessoa {
 	//atributos
 	private String nome;
 	private String cpf;
-	private Date date;
+	private Date data_nascimento;
 	
 	//Construtor
 	public Pessoa(String nome, String cpf, Date date) {
-		
+		this.setNome(nome);
+		this.setCpf(cpf);
+		this.setData_nascimento(date);
+	}
+	
+	public double tirarCopias(int qtde) {
+		return 0.10 * qtde;
 	}
 
 	public String getNome() {
@@ -29,12 +35,11 @@ public class Pessoa {
 		this.cpf = cpf;
 	}
 
-	public Date getDate() {
-		return date;
+	public Date getData_nascimento() {
+		return data_nascimento;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setData_nascimento(Date data_nascimento) {
+		this.data_nascimento = data_nascimento;
 	}
-	
 }
