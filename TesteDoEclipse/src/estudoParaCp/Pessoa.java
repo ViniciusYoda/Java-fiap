@@ -9,6 +9,11 @@ public class Pessoa {
 	
 	private String telefoneCelular;
 	
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", endereco=" + endereco + ", telefone=" + telefone + ", cpf=" + cpf
+				+ ", telefoneCelular=" + telefoneCelular + "]";
+	}
 	public String getNome() {
 		return nome;
 	}

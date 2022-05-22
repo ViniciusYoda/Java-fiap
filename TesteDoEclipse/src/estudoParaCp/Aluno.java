@@ -32,4 +32,8 @@ public class Aluno extends Pessoa {
 		// TODO Auto-generated method stub
 		
 	}
+	public Aluno() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 }
