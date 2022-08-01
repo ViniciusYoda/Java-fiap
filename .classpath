@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="aula_classes-abstratas/src"/>
+	<classpathentry kind="src" path="Aula11/src"/>
+	<classpathentry kind="src" path="Aula14/src"/>
+	<classpathentry kind="src" path="Aula8_Repeticao/src"/>
+	<classpathentry kind="src" path="Aula9_Condicionais/src"/>
+	<classpathentry kind="src" path="Banco/src"/>
+	<classpathentry kind="src" path="Check/src2"/>
+	<classpathentry kind="src" path="Checkpoint/src3"/>
+	<classpathentry kind="src" path="Começo/src4"/>
+	<classpathentry kind="src" path="Comercio 2/src6"/>
+	<classpathentry kind="src" path="Comercio/src5"/>
+	<classpathentry kind="src" path="Comercio2.0/src7"/>
+	<classpathentry kind="src" path="Comercio3/src8"/>
+	<classpathentry kind="src" path="Comercio4/src9"/>
+	<classpathentry kind="src" path="construtores/src"/>
+	<classpathentry kind="src" path="ContaBancaria/src"/>
+	<classpathentry kind="src" path="CP2(1)/CP2/src"/>
+	<classpathentry kind="src" path="CP3/src"/>
+	<classpathentry kind="src" path="DDDplus/src"/>
+	<classpathentry excluding="cp1/cp1/src/|src10/" kind="src" path="Fiap_DDD1"/>
+	<classpathentry kind="src" path="Fiap_DDD1/cp1/cp1/src"/>
+	<classpathentry kind="src" path="Fiap_DDD1/src10"/>
+	<classpathentry kind="src" path="FiapAulaDDD1/src12"/>
+	<classpathentry kind="src" path="FIAPDDD04/src13"/>
+	<classpathentry kind="src" path="FirstDDD02/src14"/>
+	<classpathentry kind="src" path="GetSet/src"/>
+	<classpathentry kind="src" path="Loja/src16"/>
+	<classpathentry kind="src" path="primeiroprojeto/src17"/>
+	<classpathentry kind="src" path="Prova/src"/>
+	<classpathentry kind="src" path="Reforço/src"/>
+	<classpathentry kind="src" path="Reforço02/src"/>
+	<classpathentry kind="src" path="Reforço10/src"/>
+	<classpathentry kind="src" path="Reforço11/src"/>
+	<classpathentry kind="src" path="Reforço12/src"/>
+	<classpathentry kind="src" path="Reforço13/src"/>
+	<classpathentry kind="src" path="Reforço14/src"/>
+	<classpathentry kind="src" path="Reforço2/src"/>
+	<classpathentry kind="src" path="Reforço3/src"/>
+	<classpathentry kind="src" path="Reforço4/src"/>
+	<classpathentry kind="src" path="Reforço6/src"/>
+	<classpathentry kind="src" path="Reforço7/src"/>
+	<classpathentry kind="src" path="Reforço9/src"/>
+	<classpathentry kind="src" path="Teste/src15"/>
+	<classpathentry kind="src" path="Teste/src18"/>
+	<classpathentry kind="src" path="TesteDoEclipse/src"/>
+	<classpathentry kind="src" path="ThirdDDD03/src19/src"/>
+	<classpathentry kind="output" path="Aula11/bin"/>
+</classpath>
