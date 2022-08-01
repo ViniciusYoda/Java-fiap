@@ -28,7 +28,7 @@ public class Exemplo1 {
 		return n;
 	}
 	
-	public ? buscaElemento() {
+	public boolean buscaElemento(int[] vetor, int n) {
 		
 	}
 	
