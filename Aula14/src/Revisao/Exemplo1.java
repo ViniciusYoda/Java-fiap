@@ -38,7 +38,20 @@ public class Exemplo1 {
 		return achou;
 	}
 	
+	public void imprimirStatus(int n, boolean status) {
+		if(status) {
+			System.out.printf("O número %d foi encontrado", n);
+		}else {
+			System.out.printf("O número %d não foi encontrado", n);
+		}
+	}
+	
 	public static void main(String[] args) {
-		
+		Exemplo1 e = new Exemplo1();
+		int t = e.tamanhoVetor();
+		int[] v = e.criaVetor(t);
+		int n = e.entradaNumero();
+		boolean status = e.buscaElemento(v, n);
+		e.imprimirStatus(n, status);
 	}
 }
