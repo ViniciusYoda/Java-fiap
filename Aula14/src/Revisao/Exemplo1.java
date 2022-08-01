@@ -29,7 +29,13 @@ public class Exemplo1 {
 	}
 	
 	public boolean buscaElemento(int[] vetor, int n) {
-		
+		boolean achou = false;
+		for(int i = 0; i<vetor.length; i++){
+			if (vetor[i] == n){
+				achou = true;
+			}
+		}
+		return achou;
 	}
 	
 	public static void main(String[] args) {
