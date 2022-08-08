@@ -35,16 +35,8 @@ public class Aluno {
 		return qtde;
 	}
 	
-	public void imprimirDados() {
-		System.out.println("Aluno: " + getNome());
-		System.out.println("Matricula " + getMatricula());
-	}
-	
-	
-	
-	public int[] criarVetor(int t) {
-		Scanner input = new Scanner(System.in);
-		int[] vetor = new int[t];
+	public Aluno[] criarVetor(int t) {
+		Aluno[] alunos = new Aluno[t];
 		for(int i = 0; i < vetor.length; i++){
 			System.out.println("Tamanho: ");
 			vetor[i] = input.nextInt();
@@ -53,6 +45,10 @@ public class Aluno {
 		
 	}
 	
+	public void imprimirDados() {
+		System.out.println("Aluno: " + getNome());
+		System.out.println("Matricula " + getMatricula());
+	}	
 	
 }
 	
