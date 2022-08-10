@@ -6,6 +6,10 @@ public class Aluno {
 	
 	private int matricula;
 	private String nome;
+	
+	public Aluno() {
+		
+	}
 
 	public Aluno(int matricula, String nome){
 		this.matricula = matricula;
@@ -36,19 +40,41 @@ public class Aluno {
 	}
 	
 	public Aluno[] criarVetor(int t) {
-		Aluno[] alunos = new Aluno[t];
+		Scanner input = new Scanner(System.in);
+		Aluno[] vetor = new Aluno[t];
 		for(int i = 0; i < vetor.length; i++){
+			
 			System.out.println("Tamanho: ");
-			vetor[i] = input.nextInt();
+			matricula = input.nextInt();
+			nome = input.next();
+			alunos[i] = new Aluno(matricula, nome);
 		}
-		return vetor;
+		return alunos;
 		
 	}
 	
-	public void imprimirDados() {
+	public void imprimirDados(Aluno[] alunos) {
+		System.out.println("*- Imprimindo os dados dos alunos... -*");
+		for(int i = 0; i < alunos.length; i++) {
+			System.out.println("Matricula: " + alunos[i].getMatricula());
+			System.out.println("Nome: " + alunos[i].getNome());
+		}
+	}
+	
+		public static void main(String[] args) {
+			Aluno a = new Aluno();
+			int qtde = a.qtdeAlunos();
+			Aluno[] alunos = a.criarVetor(qtde);
+			a.imprimirDados(alunos);
+			
+		}
+	
+	/*public void imprimirDados() {
 		System.out.println("Aluno: " + getNome());
 		System.out.println("Matricula " + getMatricula());
-	}	
+	}	*/
+	
+	
 	
 }
 	
