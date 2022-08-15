@@ -27,9 +27,9 @@ public class Aluno {
 		this.nome = nome;
 	}
 	
-	//@Override
-	//public String toString() {
-	//return "Aluno [matricula=" + matricula + ", nome=" + nome + ", getMatricula()=" + getMatricula()
-	//		+ ", getNome()=" + getNome() + "]";
-	//}
+	@Override
+	public String toString() {
+		return "Aluno [matricula=" + matricula + ", nome=" + nome + ", getMatricula()=" + getMatricula()
+				+ ", getNome()=" + getNome() + "]";
+	}
 }

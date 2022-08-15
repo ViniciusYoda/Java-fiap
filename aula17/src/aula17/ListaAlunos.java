@@ -22,7 +22,12 @@ public class ListaAlunos {
 	
 	public void imprimeLista(){
 		for(int i = 0; i < alunos.length; i++){
-			System.out.println(alunos[i]);
+			if (alunos[i] == null){
+				System.out.println("vazio");
+			}else {
+				System.out.println(alunos[i]);
+			}
+			
 		}
 	}
 }
