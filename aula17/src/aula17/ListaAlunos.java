@@ -12,7 +12,17 @@ public class ListaAlunos {
 	
 	// insere um aluno na lista "alunos"
 	public void insereAluno(Aluno a) {
-		alunos[i] = a;
-		i++;
+		if (i < alunos.length){
+			alunos[i] = a;
+			i++;
+		}else {
+			System.out.println("Lista cheia");
+		}	
+	}
+	
+	public void imprimeLista(){
+		for(int i = 0; i < alunos.length; i++){
+			System.out.println(alunos[i]);
+		}
 	}
 }
