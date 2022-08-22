@@ -58,7 +58,7 @@ public class ExemploaArrayList {
         System.out.println("Lista vazia");
        } else {
         System.out.println(listaHet);
-        }
+    }
     }
 
 }
