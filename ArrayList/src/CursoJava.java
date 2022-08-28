@@ -12,7 +12,12 @@ public class CursoJava {
 		carros.add("Argo");
 		carros.add("Fusion");
 		
-		System.out.println(carros.get(1));
+		System.out.println(carros.indexOf("Polo"));
+		carros.clear();
+		
+		for(int i = 0; i < carros.size(); i++) {
+			System.out.println(carros.get(i));
+		}
 		/*	
 		 for(String e : carros) {
 			System.out.println(e);
