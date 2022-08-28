@@ -6,7 +6,7 @@ package projetojavadoc;
 * @since Release 02 da aplicação
 */
 
-public class Funcionario {
+public class Funcionarios {
     private String matricula;
     private Double salario;
 
