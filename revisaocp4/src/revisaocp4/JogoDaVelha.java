@@ -90,6 +90,7 @@ public class JogoDaVelha {
 			}
 			return 0;
 		}
+		return jogador;
 	}
 	
 	public String toString() {

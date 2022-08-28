@@ -19,7 +19,7 @@ public class ArrayLista {
 		}
 		
 		for(int i=0; i<numeros.size(); i++) {
-			System.out.printf("%d: %d\", i+1, numeros.get(1));
+			System.out.printf("%d: %d\" , i+1, numeros.get(1));");
 		}
 	}
 
