@@ -35,7 +35,8 @@ public class Comanda {
 	 */
 	
 	public float calcularValorTotal(float total) {
-		total = 
+		total += preco;
+		return total;
 		
 	}
 	

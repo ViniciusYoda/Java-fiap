@@ -9,7 +9,7 @@ public class Teste {
 		Produto a2 = new Produto(2, "Feijão", 10.00f);
 		Produto a3 = new Produto(3, "Pastel", 5.00f);
 		
-		a1.toString();
+		
 		
 	}
 }
