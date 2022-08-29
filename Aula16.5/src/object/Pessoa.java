@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Pessoa {
 	
-	private String nome; // nomed da pessoa
-	private int identidade; // número da identidade
+	private String nome; // nome da pessoa
+	private int identidade; // nÃºmero da identidade
 	private Date nascimento; // data de nascimento da pessoa
 	
 	public Pessoa(String n, int i, Date d) {
