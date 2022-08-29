@@ -1,8 +1,15 @@
 import java.security.SecureRandom;
 
+/**
+ * @author Vinícius Yoda
+ * Programa responsavél por realizar uma matriz com números aleatorios
+ */
 public class CursoJava {
 	public static void main(String[] args) {
 		
+		/**
+		 * Gerar matriz 3x5
+		 */
 		final int linha = 3;
 		final int coluna = 5;
 		int[][] numeros = new int[linha][coluna];
