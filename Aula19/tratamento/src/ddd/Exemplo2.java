@@ -16,6 +16,8 @@ public class Exemplo2 {
                 System.err.println("a: " + a);
             }catch(ArithmeticException e){
                 System.out.println("Divisão por zero");
+            }finally{
+                System.out.println("O comando try-catch foi finalizado!");
             }
         }
     }
