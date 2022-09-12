@@ -1,6 +1,6 @@
 package ddd;
 
-public class VerificaException extends Exception{
+public class VerificaException {
     private String texto;
 
     public VerificaException(String t) {
