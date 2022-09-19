@@ -47,5 +47,6 @@
 	<classpathentry kind="src" path="Teste/src18"/>
 	<classpathentry kind="src" path="TesteDoEclipse/src"/>
 	<classpathentry kind="src" path="ThirdDDD03/src19/src"/>
+	<classpathentry kind="src" path="aula22/interface/src"/>
 	<classpathentry kind="output" path="Aula11/bin"/>
 </classpath>
