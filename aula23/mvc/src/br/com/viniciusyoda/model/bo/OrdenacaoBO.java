@@ -3,6 +3,8 @@ package br.com.viniciusyoda.model.bo;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.viniciusyoda.model.dao.OrdenacaoDAO;
+import br.com.viniciusyoda.model.dao.PassosDAO;
 import br.com.viniciusyoda.model.vo.Ordenacao;
 import br.com.viniciusyoda.model.vo.Passos;
 
@@ -71,8 +73,16 @@ public class OrdenacaoBO {
 					}
 				}
 			}
-		}catch() {
 			
+			//Persiste os resultados no arquivo
+			Ordenacao ordenacao = new Ordenacao(numero, new String(digitos), qtdeTrocas);
+			new OrdenacaoDAO().salvar(ordenacao);
+			new PassosDAO().salvarPassos(passos);
+			
+			return ordenacao;
+		}catch(Exception e) {
+			e.printStackTrace();
+			return null;
 		}
 	}
 	
