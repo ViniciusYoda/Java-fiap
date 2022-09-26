@@ -72,7 +72,9 @@ public class Passos {
 	@Override
 	public String toString() {
 		if(this.getNumeroAnterior() == null) {
-			return "\nDescrição: "
+			return "\nDescrição: ".concat(getDescricao());
+		}else {
+			return this.getNumeroAnterior().concat(" >> ").concat(this.getNumeroResultante()).concat("\nDescrição: ").concat(this.getDescricao()).concat("\n\n");
 		}
 	}
 	
