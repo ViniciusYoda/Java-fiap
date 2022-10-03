@@ -28,7 +28,7 @@ public class OrdenacaoBO {
 			
 			char[] digitos = String.valueOf(numero).toCharArray();
 			char aux;
-			String antes;
+			char[] antes;
 			int qtdeTrocas = 0;
 			
 			//Vetor (lista) que contém todo o processo de ordenação
@@ -53,7 +53,7 @@ public class OrdenacaoBO {
 				//percorre o vetor, verificando o próximo elemento
 				for(int j = 0; j < digitos.length - 1; j++) {
 					if(digitos[j] > digitos[j+1]) {
-						antes = new String(digitos.toCharArray());
+						antes = new String(digitos).toCharArray();
 						aux = digitos[j];
 						digitos[j] = digitos[j+1];
 						digitos[j+1] = aux;

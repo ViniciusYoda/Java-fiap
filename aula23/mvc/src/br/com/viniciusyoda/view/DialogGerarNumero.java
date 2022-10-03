@@ -1,5 +1,6 @@
 package br.com.viniciusyoda.view;
 
+import javax.swing.AbstractButton;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
@@ -11,6 +12,8 @@ public class DialogGerarNumero extends JDialog {
 	private JButton btGerar; // botão
 	private JButton btGerarOrdenar;
 	private JSlider slNumeroMaximo;
+    public Object getSlNumeroMaximo;
+    public Object getBtGerarNumero;
 	
 	public DialogGerarNumero() {
 		this.setSize(300, 205);
@@ -97,6 +100,14 @@ public class DialogGerarNumero extends JDialog {
 	public void setSlNumeroMaximo(JSlider slNumeroMaximo) {
 		this.slNumeroMaximo = slNumeroMaximo;
 	}
+
+    public AbstractButton getBtGerarNumero() {
+        return null;
+    }
+
+    public AbstractButton getBtGerarOrdenarNumero() {
+        return null;
+    }
 	
 	
 }
