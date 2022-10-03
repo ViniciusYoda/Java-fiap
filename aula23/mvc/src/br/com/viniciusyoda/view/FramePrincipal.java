@@ -22,6 +22,8 @@ public class FramePrincipal extends JFrame{
 	private JScrollPane spRolagemPassos;
 	private JButton btGerarNumero;
 	private JButton btOrdenarNumero;
+    public Object getTfNumeroGerado;
+    public Object getBtOrdenarNumero;
 	
 	public FramePrincipal() {
 		

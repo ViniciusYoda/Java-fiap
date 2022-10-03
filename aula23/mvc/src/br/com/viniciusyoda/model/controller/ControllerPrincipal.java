@@ -3,6 +3,9 @@ package br.com.viniciusyoda.model.controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.AbstractButton;
+import javax.swing.JComponent;
+import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -25,11 +28,11 @@ public class ControllerPrincipal implements ActionListener, ChangeListener  {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == this.framePrincipal.getBtGerarNumero()){
             this.dialogGerarNumero = new DialogGerarNumero();
-            this.dialogGerarNumero.getSlNumeroMaximo.setValue(Integer.parseInt(this.framePrincipal.getTfNumeroMaximo().getText()));
+            ((JSlider) this.dialogGerarNumero.getSlNumeroMaximo).setValue(Integer.parseInt(this.framePrincipal.getTfNumeroMaximo().getText()));
 
             this.dialogGerarNumero.getBtGerarNumero().addActionListener(this);
             this.dialogGerarNumero.getBtGerarOrdenarNumero().addActionListener(this);
-            this.dialogGerarNumero.getSlNumeroMaximo.addChangeListener(this);
+            ((JSlider) this.dialogGerarNumero.getSlNumeroMaximo).addChangeListener(this);
 
             this.dialogGerarNumero.setVisible(true);
 
@@ -52,7 +55,7 @@ public class ControllerPrincipal implements ActionListener, ChangeListener  {
     public void stateChanged(ChangeEvent e){
         if(this.dialogGerarNumero != null) {
             if(e.getSource() == this.dialogGerarNumero.getSlNumeroMaximo()){
-                this.framePrincipal.getTfNumeroMaximo().setText(String.valueOf());
+                this.framePrincipal.getTfNumeroMaximo().setText(String.valueOf(true));
             }
         }
     }
@@ -60,10 +63,10 @@ public class ControllerPrincipal implements ActionListener, ChangeListener  {
     private void gerarNumero() {
         limparDadosOrdenacaoAnterior();
         this.dialogGerarNumero.setVisible(false);
-        this.framePrincipal.getTfNumeroGerado.setText(String.valueOf((int)(Math.random() * this.dialogGerarNumero.getSlNumeroMaximo().getValue())));
+        ((AbstractButton) this.framePrincipal.getTfNumeroGerado).setText(String.valueOf((int)(Math.random() * this.dialogGerarNumero.getSlNumeroMaximo().getValue())));
 
         this.dialogGerarNumero = null;
-        this.framePrincipal.getBtOrdenarNumero.setVisible(true);
+        ((JComponent) this.framePrincipal.getBtOrdenarNumero).setVisible(true);
     }
 
     private void ordenarNumero() {
