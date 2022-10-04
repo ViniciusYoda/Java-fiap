@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author vyoda
- *
- */
-module mvc {
-}
