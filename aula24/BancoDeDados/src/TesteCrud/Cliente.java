@@ -41,7 +41,7 @@ public class Cliente {
     }
 
     @Override
-    public String toSwtring() {
+    public String toString() {
         return "id: " + id + "nome: " + nome + "sobrenome: " + sobrenome;
     }
 }
