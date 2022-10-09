@@ -1,0 +1,72 @@
+
+Descrição: Inicio da verificação do número0
+--------------------
+532135 >> 352135
+Descrição: Trocou-se o digito5 pelo 3
+
+352135 >> 325135
+Descrição: Trocou-se o digito5 pelo 2
+
+325135 >> 321535
+Descrição: Trocou-se o digito5 pelo 1
+
+321535 >> 321355
+Descrição: Trocou-se o digito5 pelo 3
+
+321355 >> 321355
+Descrição: Não houve troca pois o numero 5 já é menor ou igual que 5
+
+
+Descrição: Inicio da verificação do número1
+--------------------
+321355 >> 231355
+Descrição: Trocou-se o digito3 pelo 2
+
+231355 >> 213355
+Descrição: Trocou-se o digito3 pelo 1
+
+213355 >> 213355
+Descrição: Não houve troca pois o numero 3 já é menor ou igual que 3
+
+213355 >> 213355
+Descrição: Não houve troca pois o numero 5 já é menor ou igual que 3
+
+213355 >> 213355
+Descrição: Não houve troca pois o numero 5 já é menor ou igual que 5
+
+
+Descrição: Inicio da verificação do número2
+--------------------
+213355 >> 123355
+Descrição: Trocou-se o digito2 pelo 1
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 3 já é menor ou igual que 2
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 3 já é menor ou igual que 3
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 5 já é menor ou igual que 3
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 5 já é menor ou igual que 5
+
+
+Descrição: Inicio da verificação do número3
+--------------------
+123355 >> 123355
+Descrição: Não houve troca pois o numero 2 já é menor ou igual que 1
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 3 já é menor ou igual que 2
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 3 já é menor ou igual que 3
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 5 já é menor ou igual que 3
+
+123355 >> 123355
+Descrição: Não houve troca pois o numero 5 já é menor ou igual que 5
+
