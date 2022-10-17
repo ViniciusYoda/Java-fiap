@@ -8,5 +8,10 @@ public class PessoafactoryTeste {
         String sexo = "M";
 
         System.out.println(factory.getPessoa(nome, sexo));
+
+        String nome2 = "Bela";
+        String sexo2 = "F";
+
+        System.out.println(factory.getPessoa(nome2, sexo2));
     }
 }
