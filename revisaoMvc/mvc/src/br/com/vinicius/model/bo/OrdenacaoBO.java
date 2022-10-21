@@ -59,11 +59,21 @@ public class OrdenacaoBO {
                         passos.add(new Passos(new String(antes), new String(digitos), "Trocou-se o digito ".concat(String.valueOf(digitos[j+1])).concat(" pelo ").concat(String.valueOf(digitos[j]))));
                         continua=true;
                     } else {
-                        passos.add(new Passos(new String(digitos), new String(digitos), "Não houve troca pois o numero ".))
+                        passos.add(new Passos(new String(digitos), new String(digitos), "Nao houve troca pois o numero ".concat(String.valueOf(digitos[j])).concat(" ja eh menor/igual que ").concat(String.valueOf(digitos[j + 1]))));
                     }
                 }
             }
             
+            //Persiste os resultados
+            Ordenacao ordenacao = new Ordenacao(numero, new String(digitos), qtdeTrocas);
+            new OrdenacaoDAO().salvar(ordenacao);
+            new PassosDAO().salvarPassos(passos);
+            //Retorno um objeto da classe Ordenacao informando os resultados.
+            return ordenacao;
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
         }
     }
 }
