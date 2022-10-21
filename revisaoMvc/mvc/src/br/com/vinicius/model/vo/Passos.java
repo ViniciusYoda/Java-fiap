@@ -54,7 +54,7 @@ public class Passos {
         if (this.getNumeroAnterior() == null) {
             return "\nDescrição:".concat(this.descicao);
         } else {
-            return this.getNumeroAnterior().concat(" >> ").concat(this.getNumeroResultante()).concat("\Descricação: ").concat(this;descricao).concat("\n\n");
+            return this.getNumeroAnterior().concat(" >> ").concat(this.getNumeroResultante()).concat("\nDescricação: ").concat(this.descricao).concat("\n\n");
         }
     }
 }
