@@ -6,9 +6,11 @@ public class App {
         int contract = 0;
         String data;
         float value = 0;
+        int installments;
         Scanner number  = new Scanner(System.in);
         Scanner dataInput = new Scanner(System.in);
-        Scanner valueInput = new Scanner(System.float);
+        Scanner valueInput = new Scanner(System.in);
+        Scanner installmentsInput = new Scanner(System.in);
         System.out.println("Enter contract data: ");
         contract = number.nextInt();
         System.out.println("Date (dd/mm/yyyy): ");
@@ -16,6 +18,10 @@ public class App {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         Date date = formatter.parse(data);
         System.out.println("Contract value");
+        value = valueInput.nextFloat();
+        System.out.println("Enter number of instalments: ");
+        installments = installmentsInput.nextInt();
+
         
     }
 }
